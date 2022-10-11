@@ -9,3 +9,14 @@ output "a" {
 output "x" {
   value = "value of a = ${var.a}"
 }
+
+
+variable "b" {}
+
+variable "c" {}
+
+variable "d" {}
+
+output "values" {
+  value = "values, a = ${var.a}, b = ${var.b}, c = ${var.c}, d = ${var.d}"
+}  
