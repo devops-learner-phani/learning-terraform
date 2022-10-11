@@ -18,5 +18,5 @@ variable "c" {}
 variable "d" {}
 
 output "values" {
-  value = "values, a = ${var.a}, b = ${var.b}, c = ${var.c}, d = ${var.d}"
-}  
+  value = "Values, a = ${var.a}, b = ${var.b}, c = ${var.c}, d = ${var.d}"
+}
