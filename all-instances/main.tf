@@ -4,6 +4,7 @@ module "sg" {
 
 module "instance" {
   source = "./ec2-instances"
+  SGID   = module.sg.SGID
 }
 
 terraform {
@@ -13,3 +14,5 @@ terraform {
     region = "us-east-1"
   }
 }
+
+
