@@ -4,11 +4,11 @@ resource "aws_security_group" "allow_ssh" {
   vpc_id      = "vpc-0ea60a247fdfddb3a"
 
   ingress {
-    description      = "TLS from VPC"
-    from_port        = 22
-    to_port          = 22
-    protocol         = "TCP"
-    cidr_blocks      = ["0.0.0.0/0"]
+    description   = "TLS from VPC"
+    from_port     = 22
+    to_port       = 22
+    protocol      = "TCP"
+    cidr_blocks   = ["0.0.0.0/0"]
   }
 
   egress {
