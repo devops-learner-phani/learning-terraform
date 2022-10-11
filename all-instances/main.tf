@@ -1,9 +1,9 @@
 module "sg" {
-  source = "security-group"
+  source = "./security-group"
 }
 
 module "instance" {
-  source = "ec2-instances"
+  source = "./ec2-instances"
 }
 
 terraform {
