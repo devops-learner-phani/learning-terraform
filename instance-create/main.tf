@@ -34,5 +34,10 @@ resource "aws_instance" "web" {
   }
 }
 
-
-
+terraform {
+  backend "s3" {
+    bucket = "terraform-storages"
+    key    = "instance-create/terraform.tfstate"
+    region = "us-east-1"
+  }
+}
