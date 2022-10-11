@@ -7,3 +7,4 @@ resource "aws_instance" "web" {
     Name = "terraform-${count.index+1}"
   }
 }
+
