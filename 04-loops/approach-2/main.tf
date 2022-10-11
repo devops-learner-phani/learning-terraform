@@ -1,5 +1,5 @@
-module "ec2" {
+module "main" {
   source = "./module"
-  count = 2
-  nametag = "terraform-${count.index+1}"
 }
+
+
