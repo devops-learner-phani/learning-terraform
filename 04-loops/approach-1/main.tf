@@ -5,7 +5,7 @@ variable "no-of-instances" {
 resource "aws_instance" "web" {
   count         = var.no-of-instances
   ami           = "ami-0eccf89e87087765"
-  instance_type = "t3.micro"
+  instance_type = "t2.micro"
 
   tags = {
     Name = "terraform-${count.index + 1}"
